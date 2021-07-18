@@ -1,0 +1,138 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.30.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Okurarisona Okurarisona, Okurarisona, LIC=X96CK-ZLFFE-9UD4U-SFBCD-HZEPZ-20WW9
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.30.0.0
+Toolchain Path:  G:\software\Keil5.30\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.30.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.38.0
+Dialog DLL:      TCM.DLL V1.42.0.0
+ 
+<h2>Project:</h2>
+E:\STM32\stm32f407_keil5.30\串口实验\USER\USART.uvproj
+Project File Date:  10/17/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'G:\software\Keil5.30\ARM\ARMCC\Bin'
+Rebuild target 'USART'
+compiling stm32f4xx_it.c...
+compiling key.c...
+compiling system_stm32f4xx.c...
+compiling main.c...
+main.c(30): warning:  #177-D: variable "booth0_static"  was declared but never referenced
+  static u8 booth0_static;
+main.c: 1 warning, 0 errors
+compiling drv_oled.c...
+compiling 30205.c...
+..\HARDWARE\30205.c(11): warning:  #223-D: function "IIC_Init" declared implicitly
+  	 IIC_Init();
+..\HARDWARE\30205.c(49): warning:  #223-D: function "IIC_Send_Byte" declared implicitly
+  	   IIC_Send_Byte(data);                               //对数据进行写进去
+..\HARDWARE\30205.c(50): warning:  #223-D: function "IIC_Wait_Ack" declared implicitly
+  	   IIC_Wait_Ack();                                    //等待回应
+..\HARDWARE\30205.c(51): warning:  #223-D: function "IIC_Stop" declared implicitly
+  	   IIC_Stop();	                         //产生停止信号
+..\HARDWARE\30205.c(59): warning:  #223-D: function "IIC_Start" declared implicitly
+       IIC_Start(); 	                                      //开始
+..\HARDWARE\30205.c(60): warning:  #223-D: function "IIC_Send_Byte" declared implicitly
+  	   IIC_Send_Byte(address|IIC_READ);                //发送读取命令
+..\HARDWARE\30205.c(62): warning:  #223-D: function "IIC_Wait_Ack" declared implicitly
+  	   IIC_Wait_Ack();                                    //等待回应
+..\HARDWARE\30205.c(63): warning:  #223-D: function "IIC_Read_Byte" declared implicitly
+  	   data=IIC_Read_Byte(0);
+..\HARDWARE\30205.c(64): warning:  #223-D: function "IIC_Stop" declared implicitly
+  	   IIC_Stop();	                         //产生停止信号
+..\HARDWARE\30205.c(82): warning:  #223-D: function "IIC_Start" declared implicitly
+       IIC_Start();                         //产生开始条件
+..\HARDWARE\30205.c(83): warning:  #223-D: function "IIC_Send_Byte" declared implicitly
+  	   IIC_Send_Byte(address);              //写入器件地址
+..\HARDWARE\30205.c(84): warning:  #223-D: function "IIC_Wait_Ack" declared implicitly
+  	   IIC_Wait_Ack();                      //等待回应
+..\HARDWARE\30205.c(95): warning:  #223-D: function "IIC_Start" declared implicitly
+  			IIC_Start(); 	                                      //开始
+..\HARDWARE\30205.c(96): warning:  #223-D: function "IIC_Send_Byte" declared implicitly
+  			IIC_Send_Byte(address|IIC_READ);                //发送读取命令
+..\HARDWARE\30205.c(98): warning:  #223-D: function "IIC_Wait_Ack" declared implicitly
+  			IIC_Wait_Ack();                                    //等待回应
+..\HARDWARE\30205.c(99): warning:  #223-D: function "IIC_Read_Byte" declared implicitly
+  			data=IIC_Read_Byte(1);
+..\HARDWARE\30205.c(102): warning:  #223-D: function "IIC_Stop" declared implicitly
+  			IIC_Stop();	                         //产生停止信号
+..\HARDWARE\30205.c: 17 warnings, 0 errors
+compiling adc.c...
+compiling jy901.c...
+compiling timer.c...
+compiling LMT70.c...
+..\HARDWARE\LMT70.c(48): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			temp = TEMP + ran;
+..\HARDWARE\LMT70.c(50): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		else if(temp<TEMP-1.5f&&temp>TEMP-2.5f)
+..\HARDWARE\LMT70.c(50): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		else if(temp<TEMP-1.5f&&temp>TEMP-2.5f)
+..\HARDWARE\LMT70.c(53): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			temp = TEMP + ran;
+..\HARDWARE\LMT70.c(28): warning:  #177-D: variable "rechock"  was declared but never referenced
+  		static u8 rechock;
+..\HARDWARE\LMT70.c(82): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			temperate_dis = TEMP + ran;
+..\HARDWARE\LMT70.c: 6 warnings, 0 errors
+compiling t423.c...
+compiling usr_c216.c...
+..\HARDWARE\usr_c216.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\usr_c216.c(13): warning:  #550-D: variable "data"  was set but never used
+  	static u8 data;
+..\HARDWARE\usr_c216.c: 2 warnings, 0 errors
+compiling asd1292.c...
+..\HARDWARE\asd1292.c(21): warning:  #177-D: variable "rebuff_ecg"  was declared but never referenced
+  		static u32 rebuff_ecg[ECG_LENTH];   //  心率缓冲区
+..\HARDWARE\asd1292.c(22): warning:  #177-D: variable "ecg_diff"  was declared but never referenced
+  		static u32 ecg_diff[ECG_LENTH];			//	差值区 
+..\HARDWARE\asd1292.c(23): warning:  #177-D: variable "i"  was declared but never referenced
+  		static u8 i;
+..\HARDWARE\asd1292.c(35): warning:  #177-D: variable "max"  was declared but never referenced
+  		static u32 max;
+..\HARDWARE\asd1292.c: 4 warnings, 0 errors
+compiling exti.c...
+compiling data.c...
+compiling booth.c...
+compiling sys.c...
+compiling myiic.c...
+compiling delay.c...
+compiling usart.c...
+..\SYSTEM\usart\usart.c(200): warning:  #550-D: variable "Res"  was set but never used
+  	u8 Res;
+..\SYSTEM\usart\usart.c(212): warning:  #550-D: variable "Res"  was set but never used
+  	u8 Res;
+..\SYSTEM\usart\usart.c(227): warning:  #177-D: variable "i"  was declared but never referenced
+  	static u8 i;
+..\SYSTEM\usart\usart.c: 3 warnings, 0 errors
+assembling startup_stm32f40_41xxx.s...
+compiling misc.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_adc.c...
+compiling stm32f4xx_syscfg.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_exti.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4xx_tim.c...
+linking...
+Program Size: Code=22856 RO-data=13656 RW-data=252 ZI-data=3100  
+FromELF: creating hex file...
+"..\OBJ\USART.axf" - 0 Error(s), 33 Warning(s).
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>
